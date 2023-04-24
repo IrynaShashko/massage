@@ -7,7 +7,7 @@ const PortfolioPage = lazy(() => import("./pages/PortfolioPage/PortfolioPage"));
 const ReviewsPage = lazy(() => import("./pages/ReviewsPage/ReviewsPage"));
 const PricePage = lazy(() => import("./pages/PricePage/PricePage"));
 
-const UserRoutes = () => {
+const NavRoutes = () => {
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
@@ -20,4 +20,4 @@ const UserRoutes = () => {
   );
 };
 
-export default UserRoutes;
+export default NavRoutes;
