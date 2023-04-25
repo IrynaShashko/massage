@@ -1,13 +1,13 @@
-import "./App.css";
 import NavRoutes from "./Routes";
 import NavBar from "./components/NavBar/NavBar";
+import { Container } from "./App.styled";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <NavBar />
       <NavRoutes />
-    </div>
+    </Container>
   );
 }
 

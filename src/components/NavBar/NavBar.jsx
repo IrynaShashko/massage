@@ -1,9 +1,10 @@
 import { useState } from "react";
 // import { NavLink } from "react-router-dom";
-import logo from "../../logo_mg.png";
+import logo from "../../logo.png";
 import Modal from "../Modal/Modal";
 import { FiMenu } from "react-icons/fi";
 import { IconContext } from "react-icons";
+import { Container, Logo, ModalButton } from "./NavBar.styled";
 
 import "../../App.css";
 
@@ -14,9 +15,9 @@ const NavBar = () => {
   };
   return (
     <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo-MG" alt="logo" />
-        <button className="modal-btn" onClick={() => setIsModalOpen(true)}>
+      <Container>
+        <Logo src={logo} alt="logo" />
+        <ModalButton onClick={() => setIsModalOpen(true)}>
           <IconContext.Provider
             value={{
               size: "20px",
@@ -25,7 +26,7 @@ const NavBar = () => {
           >
             <FiMenu />
           </IconContext.Provider>
-        </button>
+        </ModalButton>
         {/* <NavLink className="nav-link" to={"/"}>
           Головна
         </NavLink>
@@ -38,7 +39,7 @@ const NavBar = () => {
         <NavLink className="nav-link" to={"/price"}>
           Ціни
         </NavLink> */}
-      </header>
+      </Container>
       {isModalOpen && <Modal onClose={onCloseModal} />}
     </div>
   );
