@@ -8,6 +8,7 @@ export const ModalBackdrop = styled.div`
   width: 120vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
   /* } */
 `;
 
