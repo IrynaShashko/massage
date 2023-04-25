@@ -1,10 +1,12 @@
+import React from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import DemoCarousel from "../../components/Carousel/Carousel";
+
 const ReviewsPage = () => {
   return (
-    <main>
-      <div>
-        <h1>Reviews Page</h1>
-      </div>
-    </main>
+    <div className="demo-carousel">
+      <DemoCarousel />
+    </div>
   );
 };
 

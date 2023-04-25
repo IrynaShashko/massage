@@ -71,3 +71,9 @@
   margin: 0 auto;
   padding: 0;
 }
+.carousel-div {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+}
