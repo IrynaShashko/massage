@@ -14,7 +14,7 @@ export const LogoMG = styled.img`
 `;
 
 export const Logo = styled.img`
-  width: 100px;
+  width: 120px;
   height: 100%;
 `;
 

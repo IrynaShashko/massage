@@ -74,7 +74,6 @@ export const ModalTitle = styled.li`
   font-family: "Raleway";
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
   line-height: 150%;
   /* identical to box height, or 24px */
 
@@ -99,4 +98,5 @@ export const ModalSubmitBtn = styled.button`
   padding: 10px 20px;
   background-color: transparent;
   width: 150px;
+  font-size: 20px;
 `;

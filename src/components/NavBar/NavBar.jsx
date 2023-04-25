@@ -20,7 +20,7 @@ const NavBar = () => {
         <ModalButton onClick={() => setIsModalOpen(true)}>
           <IconContext.Provider
             value={{
-              size: "20px",
+              size: "30px",
               color: "#007586",
             }}
           >

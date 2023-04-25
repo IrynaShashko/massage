@@ -52,7 +52,7 @@ export default function Modal({ onClose, children }) {
             <ModalButton onClick={onClose}>
               <IconContext.Provider
                 value={{
-                  size: "20px",
+                  size: "30px",
                   color: "#007586",
                 }}
               >
