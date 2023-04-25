@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/massage/static/css/main.de9c32c5.css",
-    "main.js": "/massage/static/js/main.62f8a4e9.js",
-    "static/js/680.66fe513a.chunk.js": "/massage/static/js/680.66fe513a.chunk.js",
+    "main.js": "/massage/static/js/main.d4187dad.js",
+    "static/css/893.5b8a214c.chunk.css": "/massage/static/css/893.5b8a214c.chunk.css",
+    "static/js/893.38037391.chunk.js": "/massage/static/js/893.38037391.chunk.js",
     "static/js/266.d106e761.chunk.js": "/massage/static/js/266.d106e761.chunk.js",
     "static/css/264.0dc08975.chunk.css": "/massage/static/css/264.0dc08975.chunk.css",
     "static/js/264.3ff9d386.chunk.js": "/massage/static/js/264.3ff9d386.chunk.js",
@@ -12,15 +13,19 @@
     "static/media/4.jpg": "/massage/static/media/4.ed6c048cce5c8b3020a4.jpg",
     "static/media/8.jpg": "/massage/static/media/8.a16ac1b4b87634f8d3c2.jpg",
     "static/media/5.jpg": "/massage/static/media/5.54fd0b6d05f435f85843.jpg",
+    "static/media/13.jpg": "/massage/static/media/13.93ec82445f0b68512005.jpg",
     "static/media/1.jpg": "/massage/static/media/1.4cb3699a29e8a44d2fd1.jpg",
     "static/media/2.jpg": "/massage/static/media/2.e08f26940ffbb600283a.jpg",
+    "static/media/10.jpg": "/massage/static/media/10.d7e0e56ddf82f2c44946.jpg",
     "static/media/3.jpg": "/massage/static/media/3.1627cc58f0ed31f85a8d.jpg",
     "static/media/logo.png": "/massage/static/media/logo.3b9fa794ec88ef5b38eb.png",
     "static/media/7.jpg": "/massage/static/media/7.ae04375f7feaa7ca6041.jpg",
+    "static/media/11.jpg": "/massage/static/media/11.a75b17dbfc0970d75c37.jpg",
     "index.html": "/massage/index.html",
     "main.de9c32c5.css.map": "/massage/static/css/main.de9c32c5.css.map",
-    "main.62f8a4e9.js.map": "/massage/static/js/main.62f8a4e9.js.map",
-    "680.66fe513a.chunk.js.map": "/massage/static/js/680.66fe513a.chunk.js.map",
+    "main.d4187dad.js.map": "/massage/static/js/main.d4187dad.js.map",
+    "893.5b8a214c.chunk.css.map": "/massage/static/css/893.5b8a214c.chunk.css.map",
+    "893.38037391.chunk.js.map": "/massage/static/js/893.38037391.chunk.js.map",
     "266.d106e761.chunk.js.map": "/massage/static/js/266.d106e761.chunk.js.map",
     "264.0dc08975.chunk.css.map": "/massage/static/css/264.0dc08975.chunk.css.map",
     "264.3ff9d386.chunk.js.map": "/massage/static/js/264.3ff9d386.chunk.js.map",
@@ -29,6 +34,6 @@
   },
   "entrypoints": [
     "static/css/main.de9c32c5.css",
-    "static/js/main.62f8a4e9.js"
+    "static/js/main.d4187dad.js"
   ]
 }
