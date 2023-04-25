@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/massage/static/css/main.427f3376.css",
-    "main.js": "/massage/static/js/main.dccf12e3.js",
+    "main.css": "/massage/static/css/main.de9c32c5.css",
+    "main.js": "/massage/static/js/main.14577d9a.js",
     "static/js/680.66fe513a.chunk.js": "/massage/static/js/680.66fe513a.chunk.js",
     "static/js/266.d106e761.chunk.js": "/massage/static/js/266.d106e761.chunk.js",
     "static/css/264.0dc08975.chunk.css": "/massage/static/css/264.0dc08975.chunk.css",
@@ -13,14 +13,13 @@
     "static/media/8.jpg": "/massage/static/media/8.a16ac1b4b87634f8d3c2.jpg",
     "static/media/5.jpg": "/massage/static/media/5.54fd0b6d05f435f85843.jpg",
     "static/media/1.jpg": "/massage/static/media/1.4cb3699a29e8a44d2fd1.jpg",
-    "static/media/logo_mg.png": "/massage/static/media/logo_mg.8413bc8f6a19e0899b9b.png",
     "static/media/2.jpg": "/massage/static/media/2.e08f26940ffbb600283a.jpg",
     "static/media/3.jpg": "/massage/static/media/3.1627cc58f0ed31f85a8d.jpg",
     "static/media/logo.png": "/massage/static/media/logo.3b9fa794ec88ef5b38eb.png",
     "static/media/7.jpg": "/massage/static/media/7.ae04375f7feaa7ca6041.jpg",
     "index.html": "/massage/index.html",
-    "main.427f3376.css.map": "/massage/static/css/main.427f3376.css.map",
-    "main.dccf12e3.js.map": "/massage/static/js/main.dccf12e3.js.map",
+    "main.de9c32c5.css.map": "/massage/static/css/main.de9c32c5.css.map",
+    "main.14577d9a.js.map": "/massage/static/js/main.14577d9a.js.map",
     "680.66fe513a.chunk.js.map": "/massage/static/js/680.66fe513a.chunk.js.map",
     "266.d106e761.chunk.js.map": "/massage/static/js/266.d106e761.chunk.js.map",
     "264.0dc08975.chunk.css.map": "/massage/static/css/264.0dc08975.chunk.css.map",
@@ -29,7 +28,7 @@
     "397.a28eaf2d.chunk.js.map": "/massage/static/js/397.a28eaf2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.427f3376.css",
-    "static/js/main.dccf12e3.js"
+    "static/css/main.de9c32c5.css",
+    "static/js/main.14577d9a.js"
   ]
 }
