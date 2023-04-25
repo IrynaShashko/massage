@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmassage=self.webpackChunkmassage||[]).push([[748],{748:function(e,s,n){n.r(s);var a=n(184);s.default=function(){return(0,a.jsx)("main",{children:(0,a.jsx)("div",{children:(0,a.jsx)("h1",{children:"Reviews Page"})})})}}}]);
-//# sourceMappingURL=748.352b725e.chunk.js.map
