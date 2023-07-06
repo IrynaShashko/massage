@@ -1,2 +1,0 @@
-.container{grid-gap:0 5px;display:grid;gap:0 5px;grid-auto-flow:row;grid-template-areas:"text text text text" "photo1 photo2 photo3 .";grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:.5fr 1fr}.photo1{grid-area:photo1}.photo2{grid-area:photo2}.photo3{grid-area:photo3}.text{align-items:center;font-size:20px;font-style:italic;grid-area:text;justify-content:center}.span{color:#007586;text-transform:uppercase}.img1{border-top-left-radius:30px}.img3{border-top-right-radius:30px}
-/*# sourceMappingURL=893.5b8a214c.chunk.css.map*/
