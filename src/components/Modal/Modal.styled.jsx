@@ -7,7 +7,7 @@ export const ModalBackdrop = styled.div`
   right: 0;
   width: 120vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 2;
   /* } */
 `;
@@ -17,7 +17,7 @@ export const ModalContent = styled.div`
   margin: 0;
   margin-left: auto;
   height: 100vh;
-  width: 70vw;
+  width: 80vw;
   right: 0;
   /* top: 60px; */
   background-color: #fff;
@@ -49,7 +49,7 @@ export const ModalHeader = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 40px;
 `;
 
@@ -61,7 +61,7 @@ export const ModalButton = styled.button`
 export const ModalList = styled.ul`
   list-style: none;
   font-size: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   justify-content: center;
   padding: 0;
 `;
@@ -80,7 +80,7 @@ export const ModalTitle = styled.li`
   color: #000000;
 `;
 
-export const ModalText = styled.p`
+export const ModalTextContainer = styled.div`
   justify-self: center;
   align-items: center;
   font-size: 20px;
@@ -89,12 +89,20 @@ export const ModalText = styled.p`
   margin-bottom: 30px;
 `;
 
+export const ModalText = styled.a`
+  text-decoration: none;
+  color: #007586;
+  font-size: 25px;
+`;
+
 export const ModalSubmitBtn = styled.button`
-  border: 1px solid #000000;
-  justify-self: center;
+  border: none;
+  background-color: #007586;
   align-self: center;
   padding: 10px 20px;
-  background-color: transparent;
-  width: 150px;
+  color: #ffffff;
+  width: 200px;
   font-size: 20px;
+  font-family: 400;
+  cursor: pointer;
 `;

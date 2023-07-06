@@ -5,6 +5,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul,
+li,
+a,
+p,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

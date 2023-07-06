@@ -1,14 +1,14 @@
 import priceData from "../../price.json";
 
-export default function Women() {
-  const womenData = priceData.women;
+export default function Men() {
+  const menData = priceData.men;
 
   return (
     <section>
       <div>
         <ul>
-          <h2>Жіночі послуги</h2>
-          {womenData.map((item) => (
+          <h2>Чоловічі послуги</h2>
+          {menData.map((item) => (
             <li key={item.id}>
               <p>{item.service}</p>
               <p>{item.time}</p>

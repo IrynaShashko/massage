@@ -13,6 +13,7 @@ import {
   ModalButton,
   ModalList,
   ModalTitle,
+  ModalTextContainer,
   ModalText,
   ModalSubmitBtn,
 } from "./Modal.styled";
@@ -60,7 +61,9 @@ export default function Modal({ onClose, children }) {
               </IconContext.Provider>
             </ModalButton>
           </ModalHeader>
-          <ModalText>+380999304877</ModalText>
+          <ModalTextContainer>
+            <ModalText href="tel:+380966193616">+3 (093) 619 3616</ModalText>
+          </ModalTextContainer>
           <ModalList>
             <ModalTitle onClick={onClose}>
               <NavLink className="nav-link" to={"/"}>

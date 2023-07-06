@@ -6,6 +6,11 @@ const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage/PortfolioPage"));
 const ReviewsPage = lazy(() => import("./pages/ReviewsPage/ReviewsPage"));
 const PricePage = lazy(() => import("./pages/PricePage/PricePage"));
+const PriceWomen = lazy(() => import("./components/Women/Women"));
+const PriceMen = lazy(() => import("./components/Men/Men"));
+const PriceChildren = lazy(() => import("./components/Children/Children"));
+const PriceBody = lazy(() => import("./components/Body/Body"));
+const PriceElse = lazy(() => import("./components/Else/Else"));
 
 const NavRoutes = () => {
   return (
@@ -15,11 +20,11 @@ const NavRoutes = () => {
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/price" element={<PricePage />}>
-          <Route path="women" element={<ReviewsPage />} />
-          <Route path="men" element={<ReviewsPage />} />
-          <Route path="children" element={<ReviewsPage />} />
-          <Route path="body" element={<ReviewsPage />} />
-          <Route path="other" element={<ReviewsPage />} />
+          <Route path="women" element={<PriceWomen />} />
+          <Route path="men" element={<PriceMen />} />
+          <Route path="children" element={<PriceChildren />} />
+          <Route path="body" element={<PriceBody />} />
+          <Route path="else" element={<PriceElse />} />
         </Route>
       </Routes>
     </Suspense>
