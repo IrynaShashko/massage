@@ -4,10 +4,23 @@ import { Container } from "./App.styled";
 
 function App() {
   return (
-    <Container>
-      <NavBar />
-      <NavRoutes />
-    </Container>
+    <>
+      <header>
+        <Container>
+          <NavBar />
+        </Container>
+      </header>
+      <main>
+        <Container>
+          <NavRoutes />
+        </Container>
+      </main>
+      <footer>
+        <Container>
+          <p>Footer</p>
+        </Container>
+      </footer>
+    </>
   );
 }
 

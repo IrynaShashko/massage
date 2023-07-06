@@ -72,9 +72,6 @@ export const ModalTitle = styled.li`
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 0;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 300;
   line-height: 150%;
   /* identical to box height, or 24px */
 

@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <main>
       <div>
-        <div class="container">
-          <div class="photo1">
+        <div className="container">
+          <div className="photo1">
             <img
               className="img1"
               src={photo1}
@@ -17,10 +17,10 @@ const HomePage = () => {
               alt="logo"
             />
           </div>
-          <div class="photo2">
+          <div className="photo2">
             <img src={photo2} width={100} height="100%" alt="logo" />
           </div>
-          <div class="photo3">
+          <div className="photo3">
             <img
               className="img3"
               src={photo3}
@@ -29,7 +29,7 @@ const HomePage = () => {
               alt="logo"
             />
           </div>
-          <div class="text">
+          <div className="text">
             <p>
               Я знаю все про <span className="span">ЯКІСНИЙ</span> масаж
             </p>
