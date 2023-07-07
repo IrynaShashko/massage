@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmassage=self.webpackChunkmassage||[]).push([[748],{7748:function(e,s,n){n.r(s);n(2791);var a=n(184);s.default=function(){return(0,a.jsxs)("form",{children:[(0,a.jsx)("input",{placeholder:"name"}),(0,a.jsx)("input",{placeholder:"comment"})]})}}}]);
+//# sourceMappingURL=748.cd75a183.chunk.js.map
