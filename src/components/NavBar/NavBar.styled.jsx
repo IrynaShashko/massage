@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   background-color: #ffffff;
@@ -15,9 +16,12 @@ export const LogoMG = styled.img`
 export const Logo = styled.img`
   width: 120px;
   height: 100%;
+  cursor: pointer;
 `;
 
 export const ModalButton = styled.button`
   border: none;
   background-color: transparent;
 `;
+
+export const LogoLink = styled(Link)``;

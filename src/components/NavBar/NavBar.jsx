@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../logo.png";
 import Modal from "../Modal/Modal";
 import { FiMenu } from "react-icons/fi";
@@ -13,10 +13,13 @@ const NavBar = () => {
   const onCloseModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <div>
       <Container>
-        <Logo src={logo} alt="logo" />
+        <Link to={"/"}>
+          <Logo src={logo} alt="logo" />
+        </Link>
         <ModalButton onClick={() => setIsModalOpen(true)}>
           <IconContext.Provider
             value={{

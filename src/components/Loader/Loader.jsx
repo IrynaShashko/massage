@@ -6,7 +6,7 @@ const Loader = () => {
       wrapperStyle={{ justifyContent: "center" }}
       height="100"
       width="100"
-      color="#1976d2"
+      color="#007586"
     />
   );
 };

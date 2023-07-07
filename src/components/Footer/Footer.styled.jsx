@@ -7,6 +7,11 @@ export const FooterContainer = styled.div`
   align-items: center;
 `;
 
+export const FooterIconContainer = styled.ul`
+  display: flex;
+  flex-direction: row;
+`;
+
 export const FooterInfoContainer = styled.div`
   margin-left: 20px;
 `;
