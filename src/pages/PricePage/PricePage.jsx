@@ -1,25 +1,26 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { List, Item } from "./PricePage.styled";
 
 const PricePage = () => {
   return (
     <div>
-      <ul>
+      <List>
         <li>
-          <NavLink to="/price/women">Послуги для жінок</NavLink>
+          <Item to="/price/women">Для жінок</Item>
         </li>
         <li>
-          <NavLink to="/price/men">Послуги для чоловіків</NavLink>
+          <Item to="/price/men">Для чоловіків</Item>
         </li>
         <li>
-          <NavLink to="/price/children">Послуги для дітей</NavLink>
+          <Item to="/price/children">Для дітей</Item>
         </li>
         <li>
-          <NavLink to="/price/body">Догляд за тілом</NavLink>
+          <Item to="/price/body">Догляд за тілом</Item>
         </li>
         <li>
-          <NavLink to="/price/else">Додаткові послуги</NavLink>
+          <Item to="/price/else">Додаткові послуги</Item>
         </li>
-      </ul>
+      </List>
       <Outlet />
     </div>
   );

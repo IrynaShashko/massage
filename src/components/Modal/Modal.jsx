@@ -62,7 +62,7 @@ export default function Modal({ onClose, children }) {
             </ModalButton>
           </ModalHeader>
           <ModalTextContainer>
-            <ModalText href="tel:+380966193616">+3 (093) 619 3616</ModalText>
+            <ModalText href="tel:+380966193616">+38 (093) 619 3616</ModalText>
           </ModalTextContainer>
           <ModalList>
             <ModalTitle onClick={onClose}>

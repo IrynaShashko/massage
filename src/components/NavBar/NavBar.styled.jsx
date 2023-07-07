@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 export const Container = styled.div`
   background-color: #ffffff;
   display: flex;
-  /* font-size: calc(10px + 2vmin); */
   justify-content: space-between;
   align-items: center;
 `;

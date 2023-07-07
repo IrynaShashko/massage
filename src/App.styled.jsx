@@ -12,3 +12,13 @@ export const Container = styled.div`
     width: 1200px;
   }
 `;
+
+export const Header = styled.header`
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+`;
+
+export const Main = styled.main`
+  min-height: 75vh;
+`;

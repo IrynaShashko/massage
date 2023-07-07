@@ -1,23 +1,24 @@
 import NavRoutes from "./Routes";
 import NavBar from "./components/NavBar/NavBar";
-import { Container } from "./App.styled";
+import Footer from "./components/Footer/Footer";
+import { Container, Header, Main } from "./App.styled";
 
 function App() {
   return (
     <>
-      <header>
+      <Header>
         <Container>
           <NavBar />
         </Container>
-      </header>
-      <main>
+      </Header>
+      <Main>
         <Container>
           <NavRoutes />
         </Container>
-      </main>
+      </Main>
       <footer>
         <Container>
-          <p>Footer</p>
+          <Footer />
         </Container>
       </footer>
     </>
