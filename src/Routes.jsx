@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -19,7 +19,8 @@ const NavRoutes = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
-        <Route path="/price" element={<PricePage />}>
+        <Route path="/price/*" element={<PricePage />}>
+          <Route index element={<Navigate to="women" replace />} />
           <Route path="women" element={<PriceWomen />} />
           <Route path="men" element={<PriceMen />} />
           <Route path="children" element={<PriceChildren />} />
