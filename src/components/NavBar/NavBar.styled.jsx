@@ -1,11 +1,17 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const NavLinkContainer = styled.div`
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const LogoMG = styled.img`
@@ -22,6 +28,18 @@ export const Logo = styled.img`
 export const ModalButton = styled.button`
   border: none;
   background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
-export const LogoLink = styled(Link)``;
+export const NavLinks = styled(NavLink)`
+  color: #007586;
+  text-decoration: none;
+  margin-left: 20px;
+  text-shadow: 2px 2px 5px #585858;
+  &.active {
+    border-bottom: 2px solid #007586;
+    padding: 10px 10px;
+  }
+`;

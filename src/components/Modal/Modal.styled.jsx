@@ -17,7 +17,7 @@ export const ModalContent = styled.div`
   margin: 0;
   margin-left: auto;
   height: 100vh;
-  width: 80vw;
+  width: 100vw;
   right: 0;
   /* top: 60px; */
   background-color: #fff;
@@ -50,7 +50,7 @@ export const ModalHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 export const ModalButton = styled.button`

@@ -1,4 +1,9 @@
 import priceData from "../../price.json";
+import {
+  PriceContainer,
+  ItemTitle,
+  ItemText,
+} from "../../pages/PricePage/PricePage.styled";
 
 export default function Else() {
   const elseData = priceData.else;
@@ -6,15 +11,18 @@ export default function Else() {
   return (
     <section>
       <div>
-        <ul>
-          <h2>Додаткові послуги</h2>
+        <PriceContainer>
+          <tr>
+            <ItemTitle>Послуга</ItemTitle>
+            <ItemTitle>Ціна</ItemTitle>
+          </tr>
           {elseData.map((item) => (
-            <li key={item.id}>
-              <p>{item.service}</p>
-              <p>{item.price}</p>
-            </li>
+            <tr key={item.id}>
+              <ItemText>{item.service}</ItemText>
+              <ItemText>{item.price}</ItemText>
+            </tr>
           ))}
-        </ul>
+        </PriceContainer>
       </div>
     </section>
   );

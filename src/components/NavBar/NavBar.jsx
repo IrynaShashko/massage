@@ -4,9 +4,13 @@ import logo from "../../logo.png";
 import Modal from "../Modal/Modal";
 import { FiMenu } from "react-icons/fi";
 import { IconContext } from "react-icons";
-import { Container, Logo, ModalButton } from "./NavBar.styled";
-
-import "../../App.css";
+import {
+  Container,
+  NavLinkContainer,
+  NavLinks,
+  Logo,
+  ModalButton,
+} from "./NavBar.styled";
 
 const NavBar = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -15,7 +19,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <>
       <Container>
         <Link to={"/"}>
           <Logo src={logo} alt="logo" />
@@ -30,21 +34,23 @@ const NavBar = () => {
             <FiMenu />
           </IconContext.Provider>
         </ModalButton>
-        {/* <NavLink className="nav-link" to={"/"}>
-          Головна
-        </NavLink>
-        <NavLink className="nav-link" to={"/portfolio"}>
-          Портфоліо
-        </NavLink>
-        <NavLink className="nav-link" to={"/reviews"}>
-          Відгуки
-        </NavLink>
-        <NavLink className="nav-link" to={"/price"}>
-          Ціни
-        </NavLink> */}
+        <NavLinkContainer>
+          <NavLinks className="nav-link" to={"/"}>
+            Головна
+          </NavLinks>
+          <NavLinks className="nav-link" to={"/portfolio"}>
+            Портфоліо
+          </NavLinks>
+          <NavLinks className="nav-link" to={"/reviews"}>
+            Відгуки
+          </NavLinks>
+          <NavLinks className="nav-link" to={"/price"}>
+            Ціни
+          </NavLinks>
+        </NavLinkContainer>
       </Container>
       {isModalOpen && <Modal onClose={onCloseModal} />}
-    </div>
+    </>
   );
 };
 

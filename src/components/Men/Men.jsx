@@ -1,21 +1,31 @@
 import priceData from "../../price.json";
 
+import {
+  PriceContainer,
+  ItemTitle,
+  ItemText,
+} from "../../pages/PricePage/PricePage.styled";
+
 export default function Men() {
   const menData = priceData.men;
 
   return (
     <section>
       <div>
-        <ul>
-          <h2>Чоловічі послуги</h2>
+        <PriceContainer>
+          <tr>
+            <ItemTitle>Послуга</ItemTitle>
+            <ItemTitle>Час</ItemTitle>
+            <ItemTitle>Ціна</ItemTitle>
+          </tr>
           {menData.map((item) => (
-            <li key={item.id}>
-              <p>{item.service}</p>
-              <p>{item.time}</p>
-              <p>{item.price}</p>
-            </li>
+            <tr key={item.id}>
+              <ItemText>{item.service}</ItemText>
+              <ItemText>{item.time}</ItemText>
+              <ItemText>{item.price}</ItemText>
+            </tr>
           ))}
-        </ul>
+        </PriceContainer>
       </div>
     </section>
   );

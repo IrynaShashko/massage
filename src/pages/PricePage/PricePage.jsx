@@ -6,19 +6,19 @@ const PricePage = () => {
     <div>
       <List>
         <li>
-          <Item to="/price/women">Для жінок</Item>
+          <Item to="/price/women">Жінки</Item>
         </li>
         <li>
-          <Item to="/price/men">Для чоловіків</Item>
+          <Item to="/price/men">Чоловіки</Item>
         </li>
         <li>
-          <Item to="/price/children">Для дітей</Item>
+          <Item to="/price/children">Діти</Item>
         </li>
         <li>
-          <Item to="/price/body">Догляд за тілом</Item>
+          <Item to="/price/body">Тіло</Item>
         </li>
         <li>
-          <Item to="/price/else">Додаткові послуги</Item>
+          <Item to="/price/else">Додатково</Item>
         </li>
       </List>
       <Outlet />
