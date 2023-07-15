@@ -96,7 +96,7 @@ export const ModalText = styled.a`
 export const ModalSubmitBtn = styled.button`
   border: none;
   background-color: #007586;
-  border-radius: 10px;
+  border-radius: 50px;
   align-self: center;
   padding: 10px 20px;
   color: #ffffff;
@@ -105,4 +105,13 @@ export const ModalSubmitBtn = styled.button`
   font-family: 400;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+`;
+
+export const LocationButton = styled.a`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  margin-bottom: 10px;
 `;

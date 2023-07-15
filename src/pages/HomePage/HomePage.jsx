@@ -1,42 +1,47 @@
-import "../../pages/HomePage/HomePage.css";
 import photo1 from "../../images/10.jpg";
 import photo2 from "../../images/11.jpg";
-import photo3 from "../../images/13.jpg";
+import { GrLocation } from "react-icons/gr";
+import {
+  Container,
+  TextContainer,
+  Text,
+  ImageContainer,
+  ImageLeft,
+  ImageRight,
+} from "./HomePage.styled";
+
+import {
+  ModalText,
+  ModalSubmitBtn,
+  LocationButton,
+} from "../../components/Modal/Modal.styled";
 
 const HomePage = () => {
   return (
     <main>
-      <div>
-        <div className="container">
-          <div className="photo1">
-            <img
-              className="img1"
-              src={photo1}
-              width={100}
-              height="100%"
-              alt="logo"
-            />
-          </div>
-          <div className="photo2">
-            <img src={photo2} width={100} height="100%" alt="logo" />
-          </div>
-          <div className="photo3">
-            <img
-              className="img3"
-              src={photo3}
-              width={100}
-              height="100%"
-              alt="logo"
-            />
-          </div>
-          <div className="text">
-            <p>Медична освіта</p>
-            <p>Досвід 10+ років</p>
-            <p>Симбіоз технік та методик</p>
-            <p>Працюю для вашого здоров'я</p>
-          </div>
-        </div>
-      </div>
+      <Container>
+        <TextContainer>
+          <Text>Медична освіта</Text>
+          <Text>Досвід 10+ років</Text>
+          <Text>Симбіоз технік та методик</Text>
+          <Text>Працюю для вашого здоров'я</Text>
+          <LocationButton
+            href="https://goo.gl/maps/wb7UFZ7Mh3YHv1fZA"
+            target="_blank"
+          >
+            <GrLocation />
+            <Text>пр.Перемоги, 121а, м.Київ</Text>
+          </LocationButton>
+          <ModalText href="tel:+380966193616" target="_blank">
+            +38 (093) 619 3616
+          </ModalText>
+        </TextContainer>
+        <ImageContainer>
+          <ImageLeft src={photo1} width="100%" height="150px" alt="logo" />
+          <ImageRight src={photo2} width="100%" height="150px" alt="logo" />
+        </ImageContainer>
+        <ModalSubmitBtn>Записатись</ModalSubmitBtn>
+      </Container>
     </main>
   );
 };

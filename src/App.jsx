@@ -1,6 +1,6 @@
 import NavRoutes from "./Routes";
 import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 import { Container, Header, Main } from "./App.styled";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
         </Container>
       </Main>
       <footer>
-        <Container>
+        {/* <Container>
           <Footer />
-        </Container>
+        </Container> */}
       </footer>
     </>
   );
