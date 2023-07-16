@@ -34,6 +34,7 @@ export const ModalButton = styled.button`
 `;
 
 export const NavLinks = styled(NavLink)`
+  font-size: 18px;
   color: #007586;
   text-decoration: none;
   margin-left: 20px;

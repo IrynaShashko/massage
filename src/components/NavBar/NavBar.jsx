@@ -35,18 +35,10 @@ const NavBar = () => {
           </IconContext.Provider>
         </ModalButton>
         <NavLinkContainer>
-          <NavLinks className="nav-link" to={"/"}>
-            Головна
-          </NavLinks>
-          <NavLinks className="nav-link" to={"/portfolio"}>
-            Портфоліо
-          </NavLinks>
-          <NavLinks className="nav-link" to={"/reviews"}>
-            Відгуки
-          </NavLinks>
-          <NavLinks className="nav-link" to={"/price"}>
-            Ціни
-          </NavLinks>
+          <NavLinks to={"/"}>Головна</NavLinks>
+          <NavLinks to={"/portfolio"}>Портфоліо</NavLinks>
+          <NavLinks to={"/reviews"}>Відгуки</NavLinks>
+          <NavLinks to={"/price"}>Ціни</NavLinks>
         </NavLinkContainer>
       </Container>
       {isModalOpen && <Modal onClose={onCloseModal} />}

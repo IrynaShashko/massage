@@ -5,6 +5,30 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  @media screen and (min-width: 767px) {
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+`;
+
+export const Div = styled.div`
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const TextContainer = styled.div`
@@ -12,14 +36,19 @@ export const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
   & p:not(:last-child) {
     margin-bottom: 10px;
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 20px;
+    }
   }
 `;
 
 export const Text = styled.p`
   font-size: 20px;
+  @media screen and (min-width: 1440px) {
+    font-size: 25px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -28,15 +57,26 @@ export const ImageContainer = styled.div`
   height: 150px;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media screen and (min-width: 1440px) {
+    height: 250px;
+  }
 `;
 
 export const ImageLeft = styled.img`
+  width: 100%;
+  height: 150px;
   border-top-left-radius: 50%;
-  /* border-bottom-left-radius: 50%; */
+  @media screen and (min-width: 1440px) {
+    height: 250px;
+  }
 `;
 
 export const ImageRight = styled.img`
+  width: 100%;
+  height: 150px;
   margin-left: 5px;
   border-bottom-right-radius: 50%;
-  /* border-top-right-radius: 50%; */
+  @media screen and (min-width: 1440px) {
+    height: 250px;
+  }
 `;

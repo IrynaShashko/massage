@@ -1,6 +1,7 @@
 import priceData from "../../price.json";
 
 import {
+  Container,
   PriceContainer,
   ItemTitle,
   ItemText,
@@ -11,7 +12,7 @@ export default function Women() {
 
   return (
     <section>
-      <div>
+      <Container>
         <PriceContainer>
           <tr>
             <ItemTitle>Послуга</ItemTitle>
@@ -26,7 +27,7 @@ export default function Women() {
             </tr>
           ))}
         </PriceContainer>
-      </div>
+      </Container>
     </section>
   );
 }
