@@ -1,36 +1,38 @@
 {
   "files": {
     "main.css": "/massage/static/css/main.b9221253.css",
-    "main.js": "/massage/static/js/main.775564e9.js",
-    "static/js/383.b25e18c8.chunk.js": "/massage/static/js/383.b25e18c8.chunk.js",
+    "main.js": "/massage/static/js/main.e8ecd796.js",
+    "static/js/383.0ce444d4.chunk.js": "/massage/static/js/383.0ce444d4.chunk.js",
     "static/js/266.d106e761.chunk.js": "/massage/static/js/266.d106e761.chunk.js",
-    "static/js/748.cd75a183.chunk.js": "/massage/static/js/748.cd75a183.chunk.js",
+    "static/js/543.d8ed7fe2.chunk.js": "/massage/static/js/543.d8ed7fe2.chunk.js",
     "static/js/3.8369f026.chunk.js": "/massage/static/js/3.8369f026.chunk.js",
     "static/js/373.0b719324.chunk.js": "/massage/static/js/373.0b719324.chunk.js",
     "static/js/684.001610e0.chunk.js": "/massage/static/js/684.001610e0.chunk.js",
     "static/js/9.1ee9a0f0.chunk.js": "/massage/static/js/9.1ee9a0f0.chunk.js",
     "static/js/559.f0e05c4f.chunk.js": "/massage/static/js/559.f0e05c4f.chunk.js",
     "static/js/709.971dd36c.chunk.js": "/massage/static/js/709.971dd36c.chunk.js",
-    "static/js/53.4a7b9574.chunk.js": "/massage/static/js/53.4a7b9574.chunk.js",
+    "static/js/284.f0cb3df2.chunk.js": "/massage/static/js/284.f0cb3df2.chunk.js",
+    "static/js/907.439faf75.chunk.js": "/massage/static/js/907.439faf75.chunk.js",
     "static/media/10.jpg": "/massage/static/media/10.d7e0e56ddf82f2c44946.jpg",
     "static/media/logo.png": "/massage/static/media/logo.3b9fa794ec88ef5b38eb.png",
     "static/media/11.jpg": "/massage/static/media/11.a75b17dbfc0970d75c37.jpg",
     "index.html": "/massage/index.html",
     "main.b9221253.css.map": "/massage/static/css/main.b9221253.css.map",
-    "main.775564e9.js.map": "/massage/static/js/main.775564e9.js.map",
-    "383.b25e18c8.chunk.js.map": "/massage/static/js/383.b25e18c8.chunk.js.map",
+    "main.e8ecd796.js.map": "/massage/static/js/main.e8ecd796.js.map",
+    "383.0ce444d4.chunk.js.map": "/massage/static/js/383.0ce444d4.chunk.js.map",
     "266.d106e761.chunk.js.map": "/massage/static/js/266.d106e761.chunk.js.map",
-    "748.cd75a183.chunk.js.map": "/massage/static/js/748.cd75a183.chunk.js.map",
+    "543.d8ed7fe2.chunk.js.map": "/massage/static/js/543.d8ed7fe2.chunk.js.map",
     "3.8369f026.chunk.js.map": "/massage/static/js/3.8369f026.chunk.js.map",
     "373.0b719324.chunk.js.map": "/massage/static/js/373.0b719324.chunk.js.map",
     "684.001610e0.chunk.js.map": "/massage/static/js/684.001610e0.chunk.js.map",
     "9.1ee9a0f0.chunk.js.map": "/massage/static/js/9.1ee9a0f0.chunk.js.map",
     "559.f0e05c4f.chunk.js.map": "/massage/static/js/559.f0e05c4f.chunk.js.map",
     "709.971dd36c.chunk.js.map": "/massage/static/js/709.971dd36c.chunk.js.map",
-    "53.4a7b9574.chunk.js.map": "/massage/static/js/53.4a7b9574.chunk.js.map"
+    "284.f0cb3df2.chunk.js.map": "/massage/static/js/284.f0cb3df2.chunk.js.map",
+    "907.439faf75.chunk.js.map": "/massage/static/js/907.439faf75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9221253.css",
-    "static/js/main.775564e9.js"
+    "static/js/main.e8ecd796.js"
   ]
 }
