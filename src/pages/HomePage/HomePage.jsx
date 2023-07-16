@@ -1,6 +1,7 @@
 import photo1 from "../../images/10.jpg";
 import photo2 from "../../images/11.jpg";
-import { GrLocation } from "react-icons/gr";
+import { SlLocationPin } from "react-icons/sl";
+import { IconContext } from "react-icons";
 import {
   Container,
   Div,
@@ -27,11 +28,18 @@ const HomePage = () => {
         <Text>Симбіоз технік та методик</Text>
         <Text>Працюю для вашого здоров'я</Text>
         <LocationButton
-          href="https://goo.gl/maps/wb7UFZ7Mh3YHv1fZA"
+          href="https://goo.gl/maps/o3qvsXRkfv8h3hdw5"
           target="_blank"
         >
-          <GrLocation />
-          <Text>пр.Перемоги, 121а, м.Київ</Text>
+          <IconContext.Provider
+            value={{
+              size: "25px",
+              color: "#007586",
+            }}
+          >
+            <SlLocationPin />
+          </IconContext.Provider>
+          <ModalText>пр.Перемоги, 121а, м.Київ</ModalText>
         </LocationButton>
         <ModalText href="tel:+380966193616" target="_blank">
           +38 (093) 619 3616
