@@ -1,113 +1,86 @@
-import React, { useState } from "react";
-import { Form, Field } from "formik";
+import React from "react";
+
 import { AiFillStar } from "react-icons/ai";
+import { BiUser } from "react-icons/bi";
 import { IconContext } from "react-icons";
-import { Stars, StarButton, Container, FormContainer } from "./Reviews.styled";
+import {
+  Stars,
+  StarButton,
+  Container,
+  List,
+  ListItem,
+  Div,
+  UserDiv,
+  UserName,
+  Title,
+  StarsTitle,
+  StarsText,
+  ItemDiv,
+} from "./Reviews.styled";
 import reviews from "../../reviews.json";
+
 const ReviewsPage = () => {
   const starArr = [1, 2, 3, 4, 5];
-  const [totalPositiveStars, setTotalPositiveStars] = useState(1);
-  console.log(totalPositiveStars);
-
-  const [feedback, setFeedback] = useState([]);
-  console.log(feedback);
-
-  const handleSubmit = (values, { resetForm }) => {
-    setFeedback([...feedback, { ...values, totalPositiveStars }]);
-    setTotalPositiveStars(1);
-    resetForm();
-  };
-  const handleClick = (e, index) => {
-    e.preventDefault();
-    return setTotalPositiveStars(index + 1);
-  };
 
   return (
     <Container>
-      <FormContainer
-        initialValues={{
-          name: "",
-          comment: "",
-          totalPositiveStars: totalPositiveStars,
-        }}
-        onSubmit={handleSubmit}
-      >
-        <Form>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <Field
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your name"
-            />
-          </div>
-          <div>
-            <label htmlFor="comment">Comment:</label>
-            <Field
-              type="text"
-              id="comment"
-              name="comment"
-              placeholder="Enter your comment"
-            />
-          </div>
-          <div>
-            <Stars>
-              {starArr.map((el, index) => (
-                <IconContext.Provider
-                  key={index}
-                  value={{
-                    color: `${index >= totalPositiveStars ? "#ccc" : "orange"}`,
-                  }}
-                >
-                  <StarButton
-                    type="button"
-                    onClick={(e) => handleClick(e, index)}
-                  >
-                    <AiFillStar />
-                  </StarButton>
-                </IconContext.Provider>
-              ))}
-            </Stars>
-          </div>
-          <button type="submit">Submit</button>
-        </Form>
-      </FormContainer>
-
-      <ul>
+      <Title>Останні відгуки</Title>
+      <Div>
+        <StarsTitle>5.0</StarsTitle>
+        <Stars>
+          {starArr.map((el, index) => (
+            <IconContext.Provider
+              key={index}
+              value={{
+                color: "orange",
+              }}
+            >
+              <StarButton type="button">
+                <AiFillStar />
+              </StarButton>
+            </IconContext.Provider>
+          ))}
+        </Stars>
+      </Div>
+      <StarsText>Базовано на відгуках: {reviews.length}</StarsText>
+      <List>
         {reviews?.map((item) => (
-          <li>
-            <p>{item.name}</p>
-            <p>{item.comment}</p>
-            <Stars>
-              {starArr.map((el, index) => (
-                <IconContext.Provider
-                  key={index}
-                  value={{
-                    color: `${
-                      index >= item.totalPositiveStars ? "#ccc" : "orange"
-                    }`,
-                  }}
-                >
-                  <AiFillStar />
-                </IconContext.Provider>
-              ))}
-            </Stars>
-          </li>
+          <ListItem key={item.id}>
+            <ItemDiv>
+              <Div>
+                <UserDiv>
+                  <IconContext.Provider
+                    value={{
+                      color: "#007586",
+                      size: "30px",
+                    }}
+                  >
+                    <BiUser />
+                  </IconContext.Provider>
+                </UserDiv>
+                <div>
+                  <UserName>{item.name}</UserName>
+                  <Stars>
+                    {starArr.map((el, index) => (
+                      <IconContext.Provider
+                        key={index}
+                        value={{
+                          color: `${
+                            index >= item.totalPositiveStars ? "#ccc" : "orange"
+                          }`,
+                        }}
+                      >
+                        <AiFillStar />
+                      </IconContext.Provider>
+                    ))}
+                  </Stars>
+                </div>
+              </Div>
+              <p>{item.comment}</p>
+            </ItemDiv>
+          </ListItem>
         ))}
-      </ul>
-      {/* <Stars>
-        {starArr.map((el, index) => (
-          <IconContext.Provider
-            key={index}
-            value={{
-              color: `${index >= totalPositiveStars ? "#ccc" : "orange"}`,
-            }}
-          >
-            <AiFillStar />
-          </IconContext.Provider>
-        ))}
-      </Stars> */}
+      </List>
     </Container>
   );
 };
