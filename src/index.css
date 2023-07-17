@@ -18,7 +18,7 @@ body {
 }
 
 ::-webkit-scrollbar-button {
-  background-color: #000; /* Колір кінцівки скрола */
+  background-color: transparent; /* Колір кінцівки скрола */
 }
 
 ul,

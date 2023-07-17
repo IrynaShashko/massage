@@ -14,7 +14,7 @@ import {
   UserName,
   Title,
   StarsTitle,
-  StarsText,
+  // StarsText,
   ItemDiv,
 } from "./Reviews.styled";
 import reviews from "../../reviews.json";
@@ -33,6 +33,7 @@ const ReviewsPage = () => {
               key={index}
               value={{
                 color: "orange",
+                size: "20px",
               }}
             >
               <StarButton type="button">
@@ -42,7 +43,7 @@ const ReviewsPage = () => {
           ))}
         </Stars>
       </Div>
-      <StarsText>Базовано на відгуках: {reviews.length}</StarsText>
+      {/* <StarsText>Базовано на відгуках: {reviews.length}</StarsText> */}
       <List>
         {reviews?.map((item) => (
           <ListItem key={item.id}>

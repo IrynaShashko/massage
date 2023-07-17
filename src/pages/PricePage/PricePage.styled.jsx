@@ -23,9 +23,14 @@ export const Item = styled(NavLink)`
   font-weight: 600;
   padding: 5px;
   &.active {
+    box-shadow: 1px -4px 6px -3px rgba(66, 68, 90, 1);
     color: #007586;
-    border-bottom: 2px solid #007586;
-    text-shadow: 2px 2px 5px #007586;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top: 1px solid #007586;
+    border-left: 1px solid #007586;
+    border-right: 1px solid #007586;
+    text-shadow: 1px 1px 5px #007586;
   }
   @media screen and (min-width: 767px) {
     padding: 10px;
@@ -39,7 +44,6 @@ export const Item = styled(NavLink)`
 export const PriceContainer = styled.table`
   width: 300px;
   padding: 10px;
-  border: 1px solid #007586;
   border-radius: 10px;
   margin: 0 auto;
   margin-top: 30px;
@@ -55,6 +59,16 @@ export const PriceContainer = styled.table`
     padding: 30px;
     width: 800px;
   }
+`;
+
+export const PriceItem = styled.tr`
+  background-color: #f1f4f5;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const ItemTitle = styled.td`

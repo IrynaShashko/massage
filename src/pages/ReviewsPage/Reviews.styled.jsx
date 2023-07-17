@@ -19,13 +19,20 @@ export const Container = styled.div`
 
 export const List = styled.ul`
   width: 300px;
-  @media screen and(min-width: 375px) {
+  @media screen and (min-width: 375px) {
     width: 350px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 800px;
   }
 `;
 
 export const ListItem = styled.li`
-  height: 230px;
+  height: 240px;
+  width: 100%;
   background-color: #f1f4f5;
   border-radius: 8px;
   padding: 20px;
@@ -34,6 +41,15 @@ export const ListItem = styled.li`
   overflow: auto;
   overflow-y: scroll;
   box-sizing: border-box;
+  @media screen and (min-width: 375px) {
+    height: 230px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 200px;
+  }
+  @media screen and (min-width: 1440px) {
+    height: 220px;
+  }
 `;
 
 export const Div = styled.div`
@@ -57,8 +73,7 @@ export const UserDiv = styled.div`
   width: 30px;
   padding: 6px 8px;
   margin-right: 20px;
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2),
-    2px 2px 6px 2px rgba(0, 0, 0, 0.19);
+  box-shadow: 3px 3px 11px -4px rgba(66, 68, 90, 1);
 `;
 
 export const UserName = styled.p`
