@@ -17,6 +17,7 @@ import {
   ModalText,
   ModalSubmitBtn,
   NavLinkStyled,
+  ModalNumber,
 } from "./Modal.styled";
 
 const modalRoot = document.querySelector("#root");
@@ -77,11 +78,16 @@ export default function Modal({ onClose, children }) {
             <ModalText>пр.Перемоги, 121а, м.Київ</ModalText>
           </LocationButton>
           <ModalTextContainer>
-            <ModalText href="tel:+380966193616">+38 (093) 619 3616</ModalText>
+            <ModalNumber href="tel:+380966193616">
+              +38 (093) 619 3616
+            </ModalNumber>
           </ModalTextContainer>
           <ModalList>
             <ModalTitle onClick={onClose}>
               <NavLinkStyled to={"/"}>Головна</NavLinkStyled>
+            </ModalTitle>
+            <ModalTitle onClick={onClose}>
+              <NavLinkStyled to={"/about"}>Про нас</NavLinkStyled>
             </ModalTitle>
             <ModalTitle onClick={onClose}>
               <NavLinkStyled to={"/portfolio"}>Портфоліо</NavLinkStyled>

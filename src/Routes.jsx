@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Loader from "./components/Loader/Loader";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage"));
 const PortfolioPage = lazy(() => import("./pages/PortfolioPage/PortfolioPage"));
 const ReviewsPage = lazy(() => import("./pages/ReviewsPage/ReviewsPage"));
 const PricePage = lazy(() => import("./pages/PricePage/PricePage"));
@@ -17,6 +18,7 @@ const NavRoutes = () => {
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
         <Route path="/price/*" element={<PricePage />}>

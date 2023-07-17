@@ -41,9 +41,7 @@ const HomePage = () => {
           </IconContext.Provider>
           <ModalText>пр.Перемоги, 121а, м.Київ</ModalText>
         </LocationButton>
-        <ModalText href="tel:+380966193616" target="_blank">
-          +38 (093) 619 3616
-        </ModalText>
+        <ModalText href="tel:+380966193616">+38 (093) 619 3616</ModalText>
       </TextContainer>
       <Div>
         <ImageContainer>

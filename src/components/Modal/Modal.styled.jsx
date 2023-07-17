@@ -51,7 +51,7 @@ export const ModalHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 `;
 
 export const ModalButton = styled.button`
@@ -62,7 +62,7 @@ export const ModalButton = styled.button`
 export const ModalList = styled.ul`
   list-style: none;
   font-size: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   justify-content: center;
   padding: 0;
 `;
@@ -84,7 +84,6 @@ export const ModalTextContainer = styled.div`
   font-size: 20px;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 30px;
 `;
 
 export const ModalText = styled.p`
@@ -92,12 +91,20 @@ export const ModalText = styled.p`
   color: #007586;
   font-size: 20px;
   text-shadow: 2px 2px 5px #656666;
+  /* margin-bottom: 20px; */
+`;
+export const ModalNumber = styled.p`
+  text-decoration: none;
+  color: #007586;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px #656666;
+  margin-bottom: 20px;
 `;
 
 export const ModalSubmitBtn = styled.button`
   border: none;
   background-color: #007586;
-  border-radius: 50px;
+  border-radius: 8px;
   align-self: center;
   padding: 10px 20px;
   color: #ffffff;
@@ -114,7 +121,7 @@ export const LocationButton = styled.a`
   justify-content: center;
   align-items: center;
   color: #000;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 export const NavLinkStyled = styled(NavLink)`

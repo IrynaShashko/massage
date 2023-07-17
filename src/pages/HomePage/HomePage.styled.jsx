@@ -57,26 +57,26 @@ export const ImageContainer = styled.div`
   height: 150px;
   margin-top: 20px;
   margin-bottom: 20px;
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     height: 250px;
   }
 `;
 
 export const ImageLeft = styled.img`
-  width: 100%;
-  height: 150px;
+  width: 150px;
+  object-fit: cover;
   border-top-left-radius: 50%;
-  @media screen and (min-width: 1440px) {
-    height: 250px;
+  @media screen and (min-width: 768px) {
+    width: 250px;
   }
 `;
 
 export const ImageRight = styled.img`
-  width: 100%;
-  height: 150px;
+  width: 150px;
+  object-fit: cover;
   margin-left: 5px;
   border-bottom-right-radius: 50%;
-  @media screen and (min-width: 1440px) {
-    height: 250px;
+  @media screen and (min-width: 768px) {
+    width: 250px;
   }
 `;
