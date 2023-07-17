@@ -10,7 +10,6 @@ import {
 
 export default function Body() {
   const styxData = priceData.styx;
-  const alghotermData = priceData.alghoterm;
 
   return (
     <section>
@@ -23,14 +22,8 @@ export default function Body() {
           </tr>
         </thead>
         <tbody>
+          Styx Австрія
           {styxData.map((item) => (
-            <PriceItem key={nanoid()}>
-              <ItemText>{item.service}</ItemText>
-              <ItemText>{item.time}</ItemText>
-              <ItemText>{item.price}</ItemText>
-            </PriceItem>
-          ))}
-          {alghotermData.map((item) => (
             <PriceItem key={nanoid()}>
               <ItemText>{item.service}</ItemText>
               <ItemText>{item.time}</ItemText>

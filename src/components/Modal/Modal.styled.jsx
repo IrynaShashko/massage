@@ -108,11 +108,17 @@ export const ModalSubmitBtn = styled.button`
   align-self: center;
   padding: 10px 20px;
   color: #ffffff;
-  width: 250px;
+  width: 280px;
   font-size: 20px;
   font-family: 400;
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @media screen and (min-width: 425px) {
+    width: 310px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
 `;
 
 export const LocationButton = styled.a`
