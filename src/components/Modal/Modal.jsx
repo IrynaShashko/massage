@@ -1,9 +1,9 @@
 import React, { useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
-import { NavLink } from "react-router-dom";
 import logo from "../../logo.png";
-import "../../App.css";
 import { FiX } from "react-icons/fi";
+import { SlLocationPin } from "react-icons/sl";
+import { LocationButton } from "./Modal.styled";
 import { IconContext } from "react-icons";
 import {
   ModalBackdrop,
@@ -16,6 +16,7 @@ import {
   ModalTextContainer,
   ModalText,
   ModalSubmitBtn,
+  NavLinkStyled,
 } from "./Modal.styled";
 
 const modalRoot = document.querySelector("#root");
@@ -49,7 +50,7 @@ export default function Modal({ onClose, children }) {
       <ModalContent onClose={onClose}>
         <Container>
           <ModalHeader>
-            <img src={logo} width={120} className="App-logo" alt="logo" />
+            <img src={logo} width={120} alt="logo" />
             <ModalButton onClick={onClose}>
               <IconContext.Provider
                 value={{
@@ -61,29 +62,35 @@ export default function Modal({ onClose, children }) {
               </IconContext.Provider>
             </ModalButton>
           </ModalHeader>
+          <LocationButton
+            href="https://goo.gl/maps/o3qvsXRkfv8h3hdw5"
+            target="_blank"
+          >
+            <IconContext.Provider
+              value={{
+                size: "25px",
+                color: "#007586",
+              }}
+            >
+              <SlLocationPin />
+            </IconContext.Provider>
+            <ModalText>пр.Перемоги, 121а, м.Київ</ModalText>
+          </LocationButton>
           <ModalTextContainer>
             <ModalText href="tel:+380966193616">+38 (093) 619 3616</ModalText>
           </ModalTextContainer>
           <ModalList>
             <ModalTitle onClick={onClose}>
-              <NavLink className="nav-link" to={"/"}>
-                Головна
-              </NavLink>
+              <NavLinkStyled to={"/"}>Головна</NavLinkStyled>
             </ModalTitle>
             <ModalTitle onClick={onClose}>
-              <NavLink className="nav-link" to={"/portfolio"}>
-                Портфоліо
-              </NavLink>
+              <NavLinkStyled to={"/portfolio"}>Портфоліо</NavLinkStyled>
             </ModalTitle>
             <ModalTitle onClick={onClose}>
-              <NavLink className="nav-link" to={"/reviews"}>
-                Відгуки
-              </NavLink>
+              <NavLinkStyled to={"/reviews"}>Відгуки</NavLinkStyled>
             </ModalTitle>
             <ModalTitle onClick={onClose}>
-              <NavLink className="nav-link" to={"/price"}>
-                Ціни
-              </NavLink>
+              <NavLinkStyled to={"/price"}>Ціни</NavLinkStyled>
             </ModalTitle>
           </ModalList>
           <ModalSubmitBtn>Записатись</ModalSubmitBtn>

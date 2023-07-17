@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export const ModalBackdrop = styled.div`
   /* @media screen and (max-width: 768px) { */
@@ -86,10 +87,10 @@ export const ModalTextContainer = styled.div`
   margin-bottom: 30px;
 `;
 
-export const ModalText = styled.a`
+export const ModalText = styled.p`
   text-decoration: none;
   color: #007586;
-  font-size: 25px;
+  font-size: 20px;
   text-shadow: 2px 2px 5px #656666;
 `;
 
@@ -110,8 +111,14 @@ export const ModalSubmitBtn = styled.button`
 export const LocationButton = styled.a`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #000;
   margin-bottom: 10px;
+`;
+
+export const NavLinkStyled = styled(NavLink)`
+  color: #007586;
+  text-decoration: none;
+  margin-left: 10px;
 `;
