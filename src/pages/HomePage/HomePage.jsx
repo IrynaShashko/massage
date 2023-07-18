@@ -1,7 +1,10 @@
+import { useState } from "react";
+
 import photo1 from "../../images/10.jpg";
 import photo2 from "../../images/11.jpg";
 import { SlLocationPin } from "react-icons/sl";
 import { IconContext } from "react-icons";
+import ConnectionForm from "../../components/ConnectionForm.jsx/СonnectionModal";
 import {
   Container,
   Div,
@@ -20,6 +23,11 @@ import {
 } from "../../components/Modal/Modal.styled";
 
 const HomePage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const onCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <Container>
       <TextContainer>
@@ -49,9 +57,12 @@ const HomePage = () => {
           <ImageRight src={photo2} alt="massage" />
         </ImageContainer>
         <ButtonContainer>
-          <ModalSubmitBtn>Записатись</ModalSubmitBtn>
+          <ModalSubmitBtn onClick={() => setIsModalOpen(true)}>
+            Записатись
+          </ModalSubmitBtn>
         </ButtonContainer>
       </Div>
+      {isModalOpen && <ConnectionForm onClose={onCloseModal} />}
     </Container>
   );
 };
