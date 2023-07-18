@@ -7,13 +7,12 @@ export const Container = styled.div`
   padding: 20px;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
 `;
 
 export const FormTitle = styled.h1`
   font-size: 25px;
   color: #007586;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 
 export const FormStyled = styled(Form)`
@@ -26,17 +25,17 @@ export const Label = styled.label`
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 `;
 
 export const Input = styled(Field)`
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 5px;
   border-color: #007586;
   border-radius: 8px;
-  margin-top: 10px;
-  font-size: 16px;
+  margin-top: 5px;
+  font-size: 14px;
 `;
 
 export const Comment = styled(Field)`
@@ -48,4 +47,6 @@ export const Comment = styled(Field)`
   margin-top: 10px;
   height: 50px;
   font-size: 18px;
+  margin-bottom: 20px;
+  resize: none;
 `;

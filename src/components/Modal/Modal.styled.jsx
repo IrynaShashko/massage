@@ -16,13 +16,21 @@ export const ModalBackdrop = styled.div`
 export const ModalContent = styled.div`
   position: absolute;
   margin: 0;
-  margin-left: auto;
+  /* margin-left: auto; */
   height: 100vh;
   width: 100vw;
   right: 0;
   /* top: 60px; */
   background-color: #fff;
-  /* @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
+    top: 100px;
+    left: 220px;
+    width: 400px;
+    max-height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+  } /* @media screen and (max-width: 768px) {
     max-height: 600px;
     width: 100%;
     /* padding: 20px 10px 268px 10px; */
@@ -52,6 +60,11 @@ export const ModalHeader = styled.div`
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    width: 300px;
+    padding: 0;
+    margin-bottom: 0;
+  }
 `;
 
 export const ModalButton = styled.button`
@@ -86,7 +99,7 @@ export const ModalTextContainer = styled.div`
   padding: 0;
 `;
 
-export const ModalText = styled.p`
+export const ModalText = styled.a`
   text-decoration: none;
   color: #007586;
   font-size: 20px;
@@ -114,10 +127,10 @@ export const ModalSubmitBtn = styled.button`
   cursor: pointer;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   @media screen and (min-width: 425px) {
-    width: 310px;
+    width: 250px;
   }
   @media screen and (min-width: 768px) {
-    width: 500px;
+    width: 280px;
   }
 `;
 

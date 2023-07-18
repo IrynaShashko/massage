@@ -62,7 +62,9 @@ const HomePage = () => {
           </ModalSubmitBtn>
         </ButtonContainer>
       </Div>
-      {isModalOpen && <ConnectionForm onClose={onCloseModal} />}
+      {isModalOpen && (
+        <ConnectionForm isOpen={isModalOpen} onClose={onCloseModal} />
+      )}
     </Container>
   );
 };

@@ -40,9 +40,9 @@ export const NavLinks = styled(NavLink)`
   margin-left: 20px;
   font-weight: 600;
   &.active {
-    border-bottom: 1px solid #007586;
+    border-bottom: 2px solid #007586;
     color: #007586;
     padding: 10px 10px;
-    text-shadow: 2px 2px 10px #007586;
+    text-shadow: 2px 2px 15px #007586;
   }
 `;

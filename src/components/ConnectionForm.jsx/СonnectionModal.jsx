@@ -1,10 +1,14 @@
 import React, { useEffect, useCallback } from "react";
 import { Formik, ErrorMessage } from "formik";
-
+import { IconContext } from "react-icons";
+import { FiX } from "react-icons/fi";
+import logo from "../../logo.png";
 import {
   ModalBackdrop,
   ModalContent,
   ModalSubmitBtn,
+  ModalButton,
+  ModalHeader,
 } from "../Modal/Modal.styled";
 import {
   Container,
@@ -63,7 +67,19 @@ const services = [
   // Add more services and their subServices as needed
 ];
 
-const ConnectionForm = ({ onClose }) => {
+const ConnectionForm = ({ isOpen, onClose }) => {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("modal-open");
+    } else {
+      document.body.classList.remove("modal-open");
+    }
+
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  }, [isOpen]);
+
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.code === "Escape") {
@@ -97,10 +113,23 @@ const ConnectionForm = ({ onClose }) => {
     <ModalBackdrop onClick={handleBackdropClick}>
       <ModalContent onClose={onClose}>
         <Container>
+          <ModalHeader>
+            <img src={logo} width={120} alt="logo" />
+            <ModalButton onClick={onClose}>
+              <IconContext.Provider
+                value={{
+                  size: "30px",
+                  color: "#007586",
+                }}
+              >
+                <FiX />
+              </IconContext.Provider>
+            </ModalButton>
+          </ModalHeader>
           <FormTitle>Записатись</FormTitle>
           <Formik initialValues={initialValues} onSubmit={handleSubmit}>
             {({ values, handleChange }) => (
-              <FormStyled>
+              <FormStyled action="/success/success.html" data-netlify="true">
                 <div>
                   <Label htmlFor="service">
                     Для кого:

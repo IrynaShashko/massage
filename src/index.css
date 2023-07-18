@@ -4,6 +4,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
 /* CSS код зі стилізаціями для скрола */
 ::-webkit-scrollbar {
   width: 1px; /* Ширина скрола */

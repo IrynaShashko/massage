@@ -23,14 +23,14 @@ export const Item = styled(NavLink)`
   font-weight: 600;
   padding: 5px;
   &.active {
-    box-shadow: 1px -4px 6px -3px rgba(66, 68, 90, 1);
+    box-shadow: 1px -4px 6px -4px rgba(66, 68, 90, 1);
     color: #007586;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     border-top: 1px solid #007586;
     border-left: 1px solid #007586;
     border-right: 1px solid #007586;
-    text-shadow: 1px 1px 5px #007586;
+    text-shadow: 2px 2px 15px #007586;
   }
   @media screen and (min-width: 767px) {
     padding: 10px;
