@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* basename="/massage/" */}
-    <BrowserRouter basename="/massage">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
